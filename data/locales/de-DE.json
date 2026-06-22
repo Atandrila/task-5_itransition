@@ -1,0 +1,62 @@
+{
+  "label": "German (Germany)",
+  "genres": [
+    "Pop",
+    "Rock",
+    "Elektronisch",
+    "Hausmusik",
+    "Volksmusik",
+    "Jazz",
+    "Schlager",
+    "Hip-Hop",
+    "Metal",
+    "Tanzmusik"
+  ],
+  "songTitleTemplates": [
+    "{adjective} {noun}",
+    "{verb} den {noun}",
+    "{city} Nächte",
+    "Der {color} {noun}",
+    "{number} Kleine {noun}",
+    "Nie Wieder {verb}",
+    "Flüstern aus {city}",
+    "Regen über {noun}",
+    "{person}s Traum",
+    "Schneller {noun}"
+  ],
+  "albumTitleTemplates": [
+    "{adjective} Geschichten",
+    "Die {color} Sammlung",
+    "Lieder aus {city}",
+    "{number} Tage Später",
+    "Kein Guter {noun}",
+    "Alle Meine {noun}",
+    "Der Klang von {city}",
+    "{person} und der {noun}",
+    "Träume in {color}",
+    "Oh, Mein {noun}"
+  ],
+  "bandNameTemplates": [
+    "Die {adjective} {noun}",
+    "{person} und die {noun}",
+    "{city} {suffix}",
+    "{color} {noun}",
+    "Dr. {noun}",
+    "{person} Junior"
+  ],
+  "bandSuffixes": [
+    "Band",
+    "Kollektiv",
+    "Klub",
+    "Orchester",
+    "Projekt",
+    "Gruppe"
+  ],
+  "reviewTemplates": [
+    "Ein lebendiger {genre}-Titel mit klarem Rhythmus und einem überraschend warmen Refrain.",
+    "Das Lied wirkt verspielt und sauber produziert, mit eingängigen Motiven und sicherem Aufbau.",
+    "Diese Veröffentlichung klingt farbig, energisch und bleibt nach dem ersten Hören im Kopf.",
+    "Eine ruhige Produktion mit starker Stimmung, gutem Tempo und passendem Titel.",
+    "Der Titel beginnt sanft und wächst langsam zu einem deutlich kräftigeren Finale."
+  ]
+}

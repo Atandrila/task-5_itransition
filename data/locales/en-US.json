@@ -1,0 +1,62 @@
+{
+  "label": "English (US)",
+  "genres": [
+    "Pop",
+    "Rock",
+    "House",
+    "Electronic",
+    "Folk",
+    "Country",
+    "Hip Hop",
+    "Jazz",
+    "Heavy Metal",
+    "Rock'n'Roll"
+  ],
+  "songTitleTemplates": [
+    "{adjective} {noun}",
+    "{verb} the {noun}",
+    "{city} Nights",
+    "The {color} {noun}",
+    "{number} Broken {noun}",
+    "Never Say {verb}",
+    "Whisper of {city}",
+    "Right on {noun}",
+    "{person}'s Dream",
+    "Fast {noun} Plus"
+  ],
+  "albumTitleTemplates": [
+    "{adjective} Stories",
+    "The {color} Collection",
+    "Songs from {city}",
+    "{number} Days Later",
+    "No Good {noun}",
+    "All My {noun}",
+    "The Sound of {city}",
+    "{person} and the {noun}",
+    "Dreams in {color}",
+    "Oh, My {noun}"
+  ],
+  "bandNameTemplates": [
+    "The {adjective} {noun}",
+    "{person} and the {noun}",
+    "{city} {suffix}",
+    "{color} {noun}",
+    "Dr. {noun}",
+    "{person} Jr."
+  ],
+  "bandSuffixes": [
+    "Band",
+    "Collective",
+    "Club",
+    "Orchestra",
+    "Project",
+    "Company"
+  ],
+  "reviewTemplates": [
+    "A bright {genre} track with a memorable rhythm and a surprisingly warm chorus.",
+    "The song feels playful and polished, mixing catchy hooks with a confident arrangement.",
+    "This release sounds energetic, colorful, and easy to replay after the first listen.",
+    "A smooth production with a strong mood, clean pacing, and a title that fits the sound.",
+    "The track has a relaxed beginning, then slowly grows into a more exciting finish."
+  ]
+}

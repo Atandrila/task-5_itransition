@@ -1,0 +1,295 @@
+.app {
+  min-height: 100vh;
+  padding: 24px;
+  background: #f3f5f8;
+}
+
+.toolbar {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.control select,
+.control input {
+  min-height: 42px;
+  border: 1px solid #d7dde6;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #111827;
+  outline: none;
+}
+
+.control select:focus,
+.control input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+.seed-control {
+  min-width: 330px;
+}
+
+.seed-row {
+  display: flex;
+  gap: 8px;
+}
+
+.seed-row input {
+  flex: 1;
+}
+
+.seed-row button,
+.pagination button,
+.play-button,
+.mode-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 16px;
+  min-height: 42px;
+  font-weight: 800;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.seed-row button:hover,
+.pagination button:hover,
+.mode-button:hover {
+  background: #1d4ed8;
+}
+
+.likes-control {
+  min-width: 280px;
+}
+
+.likes-control input {
+  padding: 0;
+  cursor: pointer;
+}
+
+.mode-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.mode-button.active {
+  background: #111827;
+}
+
+.view-header {
+  margin-bottom: 18px;
+}
+
+.view-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.view-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.table-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.loading {
+  padding: 12px 18px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+  color: #111827;
+}
+
+th {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.selected-row {
+  background: #dbeafe;
+}
+
+.expand-cell {
+  width: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.song-title {
+  font-weight: 800;
+}
+
+.details-row td {
+  padding: 0;
+  background: #f8fafc;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  padding: 24px 42px;
+}
+
+.cover {
+  width: 190px;
+  height: 190px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.22);
+  background: #e5e7eb;
+}
+
+.details-info {
+  flex: 1;
+}
+
+.details-info h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #111827;
+}
+
+.subtitle {
+  color: #475569;
+  margin: 0 0 8px;
+}
+
+.meta {
+  color: #64748b;
+  font-weight: 700;
+}
+
+.play-button {
+  margin: 10px 0 12px;
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.details-info h3 {
+  margin: 14px 0 6px;
+  color: #111827;
+}
+
+.details-info p {
+  line-height: 1.5;
+  color: #334155;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+}
+
+.pagination span {
+  font-weight: 800;
+  color: #111827;
+}
+
+.pagination button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .seed-control,
+  .likes-control {
+    min-width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .cover {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+  }
+
+  table {
+    min-width: 760px;
+  }
+
+  .table-card {
+    overflow-x: auto;
+  }
+}
+.play-button {
+  background: #16a34a;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background: #15803d;
+}
+
+.stop-button {
+  background: #dc2626;
+}
+
+.stop-button:hover {
+  background: #b91c1c;
+}

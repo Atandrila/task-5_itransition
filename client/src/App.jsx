@@ -329,13 +329,17 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  function handleRandomSeed() {
-    stopPlayback();
-    const randomSeed = String(Math.floor(Math.random() * Number.MAX_SAFE_INTEGER));
-    setSeed(randomSeed);
-    resetTableState();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+function handleRandomSeed() {
+  stopPlayback();
+
+  const randomSeed =
+    BigInt(Math.floor(Math.random() * 0xffffffff)) << 32n |
+    BigInt(Math.floor(Math.random() * 0xffffffff));
+
+  setSeed(randomSeed.toString());
+  resetTableState();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
   function handleLikesChange(event) {
     setLikes(Number(event.target.value));
@@ -442,9 +446,9 @@ function App() {
       </section>
 
       <section className="view-header">
-        <h1>Music Store Showcase</h1>
+        <h1>Generated Music Library</h1>
         <p>
-          Fake songs are generated from locale, seed, page, and song index. No database is used.
+          A seed-based fake music library with generated artists, albums, covers, likes, and playable previews.
         </p>
       </section>
 
